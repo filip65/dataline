@@ -53,6 +53,7 @@ export default function LimitNumberField({
             <QuestionMarkCircleIcon
               className="h-5 w-5 text-gray-400"
               aria-hidden="true"
+              data-testid="tooltip-icon"
             />
           </div>
         </Tooltip>
