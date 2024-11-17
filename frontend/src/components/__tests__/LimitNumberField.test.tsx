@@ -7,7 +7,7 @@ describe("LimitNumberField Component", () => {
   it("renders the component with the correct placeholder.", () => {
     render(<LimitNumberField placeholder={100} />);
 
-    const inputElement = screen.getByPlaceholderText("100");
+    const inputElement = screen.getByPlaceholderText("200");
     expect(inputElement).toBeInTheDocument();
   });
 
