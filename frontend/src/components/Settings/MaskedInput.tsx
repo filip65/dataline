@@ -33,11 +33,13 @@ export default function MaskedInput({
         value={value}
         className="font-mono"
         placeholder={placeholder}
+        data-testid="input"
       />
       <div className="rounded-full hover:bg-white hover:bg-opacity-10 p-1">
         <Icon
           className="h-6 w-6 text-white opacity-25 cursor-pointer"
           onClick={() => setIsMasked((prev) => !prev)}
+          data-testid="mask-toggle"
         />
       </div>
     </div>

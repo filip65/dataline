@@ -33,6 +33,7 @@ const Minimizer = ({
         <div
           className="flex items-center justify-between p-2 cursor-pointer text-gray-300"
           onClick={() => setMinimized(false)}
+          data-testid="expand-button"
         >
           <div className="ml-2">{label}</div>
           <CustomTooltip hoverText="Expand">

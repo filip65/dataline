@@ -53,4 +53,19 @@ export default defineConfig({
       },
     }),
   ],
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./tests/setup.ts",
+    coverage: {
+      include: ["src/components/**/*.{ts,tsx}"], // Only collect coverage for files in src/components
+      exclude: [
+        "node_modules/",
+        "src/tests", // Exclude test folder or other folders you don’t want to include in coverage
+        "src/**/*.stories.{ts,tsx}", // Exclude story files, if any
+      ],
+      // Other optional coverage settings
+      reporter: ["text", "json", "html"], // Specify the types of coverage reports you want
+    },
+  },
 });
