@@ -11,7 +11,7 @@ describe("LimitNumberField Component", () => {
     expect(inputElement).toBeInTheDocument();
   });
 
-  it("applies the 'disabled' state correctly", () => {
+  it("applies the 'disabled' state correctly.", () => {
     render(<LimitNumberField placeholder={100} disabled />);
 
     const inputElement = screen.getByPlaceholderText("100");
