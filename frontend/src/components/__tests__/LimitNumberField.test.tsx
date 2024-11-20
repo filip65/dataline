@@ -4,14 +4,14 @@ import "@testing-library/jest-dom";
 import LimitNumberField from "../Inputs/LimitNumberField";
 
 describe("LimitNumberField Component", () => {
-  it("renders the component with the correct placeholder", () => {
+  it("renders the component with the correct placeholder.", () => {
     render(<LimitNumberField placeholder={100} />);
 
     const inputElement = screen.getByPlaceholderText("100");
     expect(inputElement).toBeInTheDocument();
   });
 
-  it("applies the 'disabled' state correctly", () => {
+  it("applies the 'disabled' state correctly.", () => {
     render(<LimitNumberField placeholder={100} disabled />);
 
     const inputElement = screen.getByPlaceholderText("100");
